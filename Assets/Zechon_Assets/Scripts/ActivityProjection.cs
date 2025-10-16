@@ -6,7 +6,7 @@ using UnityEngine;
 public class ActivityProjection : ScriptableObject
 {
     [Header("Projected Amounts of Activity")]
-    public int blocksWalked;
+    public int blocksSwam;
     public int blocksRan;
     public int timesJumped;
     public int timesSprintJumped;
