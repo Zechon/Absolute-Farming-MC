@@ -10,12 +10,6 @@ public class FoodCalculator : MonoBehaviour
 {
     [Header("Calculator Logic Configuration")]
     [SerializeField] private int ticksInDay = 24000;
-    [SerializeField] private int foodLevel = 20;
-    private int foodLevelMax = 20;
-    [SerializeField] private int saturationLevel = 20;
-    private int saturationLevelMax = 20;
-    [SerializeField] private float exhuastionLevel = 0;
-    private float exhuastionDrain = 4;
 
     [Header("Hunger Config Values")]
     [SerializeField]
