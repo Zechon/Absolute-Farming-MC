@@ -2475,7 +2475,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1056516952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2573,6 +2573,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1066133606}
   - component: {fileID: 1066133605}
+  - component: {fileID: 1066133607}
   m_Layer: 0
   m_Name: Calc_Test
   m_TagString: Untagged
@@ -2587,15 +2588,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1066133604}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a46a78e412516f4eb32daf27d9ab9fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ticksInDay: 24000
-  foodLevel: 20
-  saturationLevel: 20
-  exhuastionLevel: 0
   regProj: {fileID: 11400000, guid: d43b7402500561b4fa40be9e05a223bd, type: 2}
   pvpProj: {fileID: 11400000, guid: 4d65524b6dd0bf944a42ce9e96afc9c3, type: 2}
   difficulty: 3
@@ -2621,6 +2619,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1066133607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1066133604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a45ed3b434ac55045a756b566bd03416, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ticks: 24000
+  randomTickSpeed: 3
+  chunkCount: 10
+  sectionsPerChunk: 24
+  blocksPerSection: 4096
+  totalRandomTicks: 1728000
+  subChunkCount: 240
 --- !u!1 &1121027256
 GameObject:
   m_ObjectHideFlags: 0
@@ -4554,14 +4571,14 @@ MonoBehaviour:
       m_Calls: []
   m_text: Option A
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 0}
-  m_sharedMaterial: {fileID: 0}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4281479730
   m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -4574,7 +4591,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -4605,7 +4622,7 @@ MonoBehaviour:
   checkPaddingRequired: 0
   m_isRichText: 1
   m_parseCtrlCharacters: 1
-  m_isOrthographic: 0
+  m_isOrthographic: 1
   m_isCullingEnabled: 0
   m_horizontalMapping: 0
   m_verticalMapping: 0
